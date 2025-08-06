@@ -6,7 +6,7 @@ export default function Main() {
   return (
     <div>
         <Header/>
-        <Product/>
+        <Product/>  
         <Footer/>
     </div>
   )

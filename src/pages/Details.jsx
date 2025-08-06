@@ -227,7 +227,7 @@ export default function Details() {
                             </div>
 
                             <div className="mt-6 flex space-x-4">
-                                <Link to="/Cartinfo" state={{  productId: product.id }}>
+                                <Link to="/Cart" state={{  productId: product.id }}>
                                 <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-full font-medium flex items-center justify-center">
                                     <FiShoppingCart className="mr-2" />
                                     ADD TO CART

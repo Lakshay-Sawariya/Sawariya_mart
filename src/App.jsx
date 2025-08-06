@@ -2,25 +2,36 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Pages/Main';
 import Details from './pages/Details';
-import CartInfo from './pages/Cartinfo';
+import Cart from './Feature/Cart/Cart'
+import Account from './pages/Account';
+import Wishlist from './pages/Wishlist';
 export default function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Main/>
+      element: <Main />
     },
     {
       path: "/Details/:id",
       element: <Details />
     },
     {
-      path:"/Cartinfo",
-      element:<CartInfo/>
+      path: "/Cart",
+      element: <Cart />
     },
     {
-      path: "Main",
-      element: <Main/>
+      path: "/Main",
+      element: <Main />
+    },
+    {
+      path: "/Wishlist",
+      element: <Wishlist />
+    },
+    {
+      path: "/Account",
+      element: <Account />
     }
+
   ]);
 
   return (
